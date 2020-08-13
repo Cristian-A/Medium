@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding: 10 20; background: #fff;" height="430" width="600">
+	<style>
+		text { fill: #474747; font-family: Menlo, Monaco, monospace; font-size: 15; }
+		.keyword { fill: #00B196 !important; }
+		.specific { fill: #E40073 !important; }
+		.comment { fill: #6E6E6E !important; }
+		.dirac { fill: #0077E5 !important; }
+		.type { fill: #00A2D9 !important; }
+		.string { fill: #009FAB !important; }
+		.numeric { fill: #DC4600 !important; }
+		.literal { fill: #E62042 !important; }
+		.method { fill: #9B00C1 !important; }
+	</style>
+	<text x="0" y="25"><tspan class="comment">/// Problem 1, Solution n. 2</tspan></text>
+	<text x="0" y="50"><tspan class="comment">/// Time Complexity: O(g)</tspan></text>
+	<text x="0" y="75"><tspan class="comment">/// Memory Complexity: O(1)</tspan></text>
+	<text x="0" y="100"><tspan class="specific">func</tspan> <tspan class="method">f</tspan>(g: <tspan class="type">Integer</tspan>, n: <tspan class="type">Integer</tspan>): <tspan class="type">Integer</tspan> {</text>
+	<text x="28" y="125"><tspan class="keyword">if</tspan> (g &lt; <tspan class="numeric">1</tspan> || n &lt; <tspan class="numeric">2</tspan>) <tspan class="keyword">return</tspan> n;</text>
+	<text x="28" y="150"><tspan class="specific">var</tspan> c: <tspan class="type">Integer</tspan> = <tspan class="numeric">0</tspan>;</text>
+	<text x="28" y="175"><tspan class="specific">var</tspan> w: <tspan class="type">Integer</tspan> = n;</text>
+	<text x="28" y="200"><tspan class="specific">var</tspan> k: <tspan class="type">Integer</tspan> = n;</text>
+	<text x="28" y="225"><tspan class="keyword">while</tspan> (g &gt; <tspan class="numeric">0</tspan>) {</text>
+	<text x="56" y="250">c = n + w + k + <tspan class="numeric">1</tspan>;</text>
+	<text x="56" y="275">k = w;</text>
+	<text x="56" y="300">w = c;</text>
+	<text x="56" y="325">g -= <tspan class="numeric">1</tspan>;</text>
+	<text x="28" y="350">}</text>
+	<text x="28" y="375"><tspan class="keyword">return</tspan> c;</text>
+	<text x="0" y="400">}</text>
+</svg>
