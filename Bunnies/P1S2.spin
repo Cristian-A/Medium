@@ -1,6 +1,6 @@
 /// Problem 1, Solution n. 2
 /// Time Complexity: O(g)
-/// Memory Complexity: O(1)
+/// Memory Complexity: Θ(1)
 func f(g: Integer, n: Integer): Integer {
 	if (g < 1 || n < 2) return n;
 	var c: Integer = 0;

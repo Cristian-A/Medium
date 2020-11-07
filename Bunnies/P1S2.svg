@@ -13,7 +13,7 @@
 	</style>
 	<text x="0" y="25"><tspan class="comment">/// Problem 1, Solution n. 2</tspan></text>
 	<text x="0" y="50"><tspan class="comment">/// Time Complexity: O(g)</tspan></text>
-	<text x="0" y="75"><tspan class="comment">/// Memory Complexity: O(1)</tspan></text>
+	<text x="0" y="75"><tspan class="comment">/// Memory Complexity: Θ(1)</tspan></text>
 	<text x="0" y="100"><tspan class="specific">func</tspan> <tspan class="method">f</tspan>(g: <tspan class="type">Integer</tspan>, n: <tspan class="type">Integer</tspan>): <tspan class="type">Integer</tspan> {</text>
 	<text x="28" y="125"><tspan class="keyword">if</tspan> (g &lt; <tspan class="numeric">1</tspan> || n &lt; <tspan class="numeric">2</tspan>) <tspan class="keyword">return</tspan> n;</text>
 	<text x="28" y="150"><tspan class="specific">var</tspan> c: <tspan class="type">Integer</tspan> = <tspan class="numeric">0</tspan>;</text>
