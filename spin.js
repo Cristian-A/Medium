@@ -9,7 +9,7 @@ for (let filename of filenames) {
 
 function process(line) {
 	line = line.replace(/"/g, '§');
-	line = line.replace(/(print|break|continue|do|else|for|if|import|loop|repeat|rest|return|until|while|new)/g, '<tspan class="keyword">$1</tspan>');
+	line = line.replace(/(write|read|break|random|continue|do|else|for|if|import|loop|repeat|rest|return|until|while|new)/g, '<tspan class="keyword">$1</tspan>');
 	line = line.replace(/(var|vec|con|mat|func|proc)/g, '<tspan class="specific">$1</tspan>');
 	line = line.replace(/(([0-9]+(?:\.[0-9]+(?:[e][-]?[0-9]+)?)?i)|([0-9]+\.[0-9]+(?:[e][-]?[0-9]+)?)|((?:0[x][0-9A-F]+)|(?:0b[01]+)|(?:0o[0-7]+)|(?:0d[0-9]+)|(?:[0-9]+)))/g, '<tspan class="numeric">$1</tspan>');
 	line = line.replace(/(\b)(true|false|(?:<[01]\\|)|(?:\\|[01]>)|infinity|undefined)(\b)$/g, '$1<tspan class="literal">$2</tspan>$3');
@@ -58,7 +58,6 @@ function processSVG(file) {
 		svg += `\t<text x="${x}" y="${y}">${line}</text>\n`;
 	}
 	y += (padding << 1) + interLine;
-	svg = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding: ${padding} ${padding + interLine}; background: #fff;" height="${y}" width="600">\n` + svg + '</svg>';
+	svg = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="padding: ${padding}px ${padding + interLine}px; background: #fff;" height="${y}" width="600">\n` + svg + '</svg>';
 	return svg;
 }
-
